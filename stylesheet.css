@@ -1,68 +1,105 @@
 * {
-    background-color:  #F7F2E0;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
-.header-list {
-    float: right;
-    padding-right: 50px
-}
-
-.header-list li {
-    list-style: none;
-    float: left;
-    padding: 30px 15px;
-    color: black;
-}
-
-.clear {
-    clear: both;
-}
-
-.logo {
-    float: center;
-}
-
 .title {
-    float: center;
+    text-align: center;
+    padding: 70px 30px;
     font-size: 70px;
     font-weight: bold;
  }
 
+ /*タブ切り替え全体のスタイル*/
+.tabs {
+    background-color: white;
+    height: 600px;
+    width: 1200px;
+    margin: 0 auto;
+}
+  
+  /*タブのスタイル*/
+  .tab_item {
+    width: calc(100%/3);
+    height: 50px;
+    line-height: 50px;
+    font-size: 16px;
+    text-align: center;
+    color: black;
+    display: block;
+    float: left;
+    text-align: center;
+    border-bottom: 7px solid #A9D0F5;
+    font-weight: bold;
+    transition: all 0.2s ease;
+  }
+  .tab_item:hover {
+    opacity: 0.75;
+  }
+  
+  /*ラジオボタンを全て消す*/
+  input[name="tab_item"] {
+    display: none;
+  }
+  
+  /*タブ切り替えの中身のスタイル*/
+  .tab_content {
+    background-color: white;
+    display: none;
+    padding: 40px 40px 0;
+    clear: both;
+    overflow: hidden;
+  }
 
-.icon {
-        border-radius: 50%; 
-        width:  200px;  
-        height: 200px;
-        float: left;
+  .info_content p {
+    padding: 5px 0;
+    max-width: 500px;
+    border-bottom: solid 2px gray;
+}
+
+  .icon {
+    border-radius: 50%; 
+    width:  200px;  
+    height: 200px;
+    float: left;
 }
 
 h2 {
-    font-size: 25px;
-    float: left;
-    padding-left: 45px;
+font-size: 25px;
+float: left;
 }
 
 .fa-twitter {
-    color: black;
-    padding-left: 70px;
-    padding-top: 25px;
-    float: left;
+color: black;
+padding-left: 70px;
+padding-top: 25px;
+float: left;
 }
 
 .fa-pen-fancy {
-    color: black;
-    padding-left: 10px;
-    padding-top: 25px;
+color: black;
+padding-left: 10px;
+padding-top: 25px;
 }
 
-.profile  {
-    padding: 15px  0 0 250px;
+.text {
+    margin-top: 50px;
 }
 
-footer p {
-    float: right;
-    font-size: 15px;
-    padding: 0 50px 0 0 ;
-}
+  /*選択されているタブのコンテンツのみを表示*/
+  #info:checked ~ #info_content,
+  #about:checked ~ #about_content,
+  #works:checked ~ #works_content {
+    background-color: white;
+    display: block;
+  }
+  
+  /*選択されているタブのスタイルを変える*/
+  .tabs input:checked + .tab_item {
+    background-color: #A9D0F5;
+    color:black;
+  }
+
+
+
+
 
