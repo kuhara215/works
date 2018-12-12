@@ -1,0 +1,35 @@
+* {
+    background-color:  #F7F2E0;
+    float: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+
+.header-list li {
+    list-style: none;
+    float: left;
+    padding: 30px 15px;
+    color: black;
+}
+
+.clear {
+    clear: both;
+}
+
+.logo {
+    width: auto;
+    margin: 0 auto;
+}
+
+.title {
+    float: left;
+    font-size: 70px;
+    font-weight: bold;
+}
+
+footer p {
+    float: right;
+    font-size: 15px;
+    padding: 0 35px 0 0 ;
+}
+
