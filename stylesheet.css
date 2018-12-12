@@ -4,6 +4,10 @@
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
+.header-list {
+    float: right;
+    padding-right: 50px
+}
 
 .header-list li {
     list-style: none;
@@ -17,14 +21,27 @@
 }
 
 .logo {
-    width: auto;
-    margin: 0 auto;
+    float: center;
 }
 
 .title {
-    float: left;
+    float: center;
     font-size: 70px;
     font-weight: bold;
+}
+
+.icon {
+        border-radius: 50%; 
+        width:  200px;  
+        height: 200px;
+}
+
+.fa-twitter {
+    color: black;
+}
+
+.fa-pen-fancy {
+    color: black;
 }
 
 footer p {
