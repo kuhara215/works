@@ -9,48 +9,36 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.0/css/all.css" integrity="sha384-aOkxzJ5uQz7WBObEZcHvV5JvRW3TUc2rNPA7pe3AwnsUohiw1Vj2Rgx2KSOkF5+h" crossorigin="anonymous">
 </head>
 <body>
-
     <div class="title">Kuhara's  Works</div>
 
-    <div class="tabs">
-        <nav>
-            <input id="info" type="radio" name="tab_item" checked>
-            <label class="tab_item" for="info">Infomation</label>
-            <input id="about" type="radio" name="tab_item">
-            <label class="tab_item" for="about">About</label>
-            <input id="works" type="radio" name="tab_item">
-            <label class="tab_item" for="works">Works</label>
-        </nav>
-    </div>
-    
-    <main>
+    <main class="tabs">
+        <input id="info" type="radio" name="tab_item" checked>
+        <label class="tab_item" for="info">Infomation</label>
+        <input id="about" type="radio" name="tab_item">
+        <label class="tab_item" for="about">About</label>
+        <input id="works" type="radio" name="tab_item">
+        <label class="tab_item" for="works">Works</label>
 
-        <section>
-            <div class="tab_content" id="info_content">
-                <p>2018.12.12　　本サイト公開</p>
+        <section class="tab_content" id="info_content">
+            <p>2018.12.12　　本サイト公開</p>
+        </section>
+
+        <section class="tab_content" id="about_content">
+            <img src="https://pbs.twimg.com/profile_images/1022204056872218624/S5AIcYUb_400x400.jpg" alt="icon" class="icon">
+            <h2>くはら</h2>
+            <a href="https://twitter.com/kuhara215?lang=ja"><i class="fab fa-twitter fa-2x"></i></a>
+            <a href="https://note.mu/kuhara"><i class="fas fa-pen-fancy fa-2x"></i></a>
+            <div class="text">
+                <ul>
+                    <li>2月15日生まれ</li>
+                    <li>2018年3月よりプログラミングの勉強を開始、4月より未経験でSEとして就職</li>
+                    <li>本サイトでは、管理人くはらが趣味で作ったサイト等を公開していきます</li>
+                    </ul>
             </div>
         </section>
 
-        <section>
-            <div class="tab_content" id="about_content">
-                <img src="https://pbs.twimg.com/profile_images/1022204056872218624/S5AIcYUb_400x400.jpg" alt="icon" class="icon">
-                <h2>くはら</h2>
-                <a href="https://twitter.com/kuhara215?lang=ja"><i class="fab fa-twitter fa-2x"></i></a>
-                <a href="https://note.mu/kuhara"><i class="fas fa-pen-fancy fa-2x"></i></a>
-                <div class="text">
-                    <ul>
-                        <li>2月15日生まれ</li>
-                        <li>2018年3月よりプログラミングの勉強を開始、4月より未経験でSEとして就職</li>
-                        <li>本サイトでは、管理人くはらが趣味で作ったサイト等を公開していきます</li>
-                     </ul>
-                </div>
-            </div>
-         </section>
-
-        <section>
-            <div class="tab_content" id="works_content">
-                <p>comming soon...</p>
-            </div>
+        <section class="tab_content" id="works_content">
+            <p>comming soon...</p>
         </section>
    
     </main>
